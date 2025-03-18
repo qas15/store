@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "dev": "node index.js"
+    "dev": "nodemon index.js"
   },
   "keywords": [],
   "author": "",
@@ -20,9 +20,8 @@
     "pg": "^8.13.1",
     "pg-hstore": "^2.3.4",
     "sequelize": "^6.37.5",
-    "uuid": "^11.0.5"
-  },
-  "devDependencies": {
+    "uuid": "^11.0.5",
     "nodemon": "^3.1.9"
-  }
+  },
+  "devDependencies": {}
 }
