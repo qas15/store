@@ -1,0 +1,227 @@
+
+.payment-page {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 30px;
+    background-color: #f9f9f9;
+    height: 100vh;
+    color: #333;
+}
+
+
+.payment-page h2 {
+    font-size: 32px;
+    font-weight: 600;
+    margin-bottom: 20px;
+    color: #444;
+}
+
+
+.payment-items {
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 12px;
+    border: 1px solid #e0e0e0;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 700px;
+    margin: 30px auto;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    transition: all 0.3s ease-in-out;
+}
+
+.payment-items h3 {
+    font-size: 2em;
+    color: #333;
+    margin-bottom: 20px;
+    text-align: center;
+    font-weight: 600;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
+.payment-items ul {
+    list-style: none;
+    padding: 0;
+}
+
+.payment-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    margin: 12px 0;
+    background: linear-gradient(135deg, #ffffff, #f0f8ff);
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+    font-size: 1.2em;
+    color: #444;
+    transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease;
+    border: 1px solid #dcdcdc;
+}
+
+.payment-item:hover {
+    transform: scale(1.03);
+    background-color: #e0f7fa;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+.payment-item .name {
+    font-weight: 500;
+    color: #333;
+    letter-spacing: 0.5px;
+}
+
+.payment-item .price {
+    font-weight: 700;
+    color: #ff4081;
+    font-size: 1.3em;
+}
+
+.payment-item .price::after {
+    content: " ₽";
+}
+
+.payment-item .name, .payment-item .price {
+    transition: all 0.3s ease;
+}
+
+.payment-item:last-child {
+    margin-bottom: 0;
+}
+
+.payment-item .name:hover {
+    color: #00796b;
+}
+
+.payment-item .price:hover {
+    color: #d32f2f;
+}
+
+
+
+.total-price {
+    font-size: 22px;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+
+.total-price strong {
+    font-size: 26px;
+    color: #28a745;
+}
+
+
+.payment-instruction {
+    font-size: 18px;
+    margin-bottom: 30px;
+    text-align: center;
+    color: #555;
+}
+
+.payment-instruction strong {
+    font-weight: bold;
+}
+
+
+.success-message {
+    color: #28a745;
+    font-size: 20px;
+    font-weight: 600;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.error-message {
+    color: #dc3545;
+    font-size: 20px;
+    font-weight: 600;
+    text-align: center;
+    margin-top: 20px;
+}
+
+
+.payment-btn {
+    background-color: #4CAF50;
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+    padding: 15px 30px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-top: 20px;
+}
+
+
+.payment-btn:hover {
+    background-color: #45a049;
+}
+
+
+@media (max-width: 768px) {
+    .payment-page h2 {
+        font-size: 26px;
+    }
+
+    .payment-items h3 {
+        font-size: 20px;
+    }
+
+    .payment-item {
+        font-size: 16px;
+    }
+
+    .total-price {
+        font-size: 20px;
+    }
+
+    .payment-btn {
+        font-size: 16px;
+        padding: 12px 25px;
+    }
+}
+.address-input {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin: 20px 0;
+    font-family: 'Arial', sans-serif;
+}
+
+.address-input label {
+    font-size: 1.1em;
+    color: #333;
+    margin-bottom: 8px;
+    font-weight: bold;
+}
+
+.address-input input {
+    width: 100%;
+    padding: 12px 15px;
+    font-size: 1em;
+    border: 2px solid #ddd;
+    border-radius: 8px;
+    outline: none;
+    transition: all 0.3s ease;
+    background-color: #f9f9f9;
+}
+
+.address-input input:focus {
+    border-color: #5d9bff;
+    box-shadow: 0 0 8px rgba(93, 155, 255, 0.3);
+    background-color: #ffffff;
+}
+
+.address-input input::placeholder {
+    color: #aaa;
+    font-style: italic;
+}
+
+.address-input input:disabled {
+    background-color: #f0f0f0;
+    border-color: #ccc;
+}

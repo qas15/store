@@ -1,0 +1,52 @@
+.brand-bar {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.brand-card {
+    padding: 14px;
+    background: linear-gradient(135deg, #1abc9c, #3498db);
+    border-radius: 10px;
+    width: 130px;
+    text-align: center;
+    font-size: 16px;
+    font-weight: bold;
+    color: white;
+    cursor: pointer;
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+    transform-origin: center;
+}
+
+.brand-card:hover {
+    transform: scale(1.1) rotate(3deg);
+    background: linear-gradient(135deg, #3498db, #1abc9c);
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.2);
+    animation: pulse 0.8s infinite ease-in-out;
+}
+
+.brand-card.selected {
+    border: 2px solid #af29b9;
+    box-shadow: 0 8px 22px rgba(0, 0, 0, 0.1);
+}
+
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.05);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+
+
+
+
+
+

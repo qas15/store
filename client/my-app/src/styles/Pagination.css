@@ -1,0 +1,36 @@
+.pagination {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 12px;
+    margin-top: 20px;
+}
+
+.pagination-item {
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.pagination-item:hover {
+    background-color: #b212ff;
+    transform: translateY(-4px);
+}
+
+.pagination-item:active {
+    background-color: #e52bff;
+    transform: translateY(2px);
+}
+
+.pagination-item.active {
+    color: white;
+    font-weight: 700;
+    transform: translateY(-4px);
+}
+

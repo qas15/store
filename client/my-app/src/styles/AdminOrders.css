@@ -1,0 +1,150 @@
+.orders-container {
+    padding: 30px;
+    background-color: #f4f7fc;
+    border-radius: 12px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    margin-top: 30px;
+    max-width: 1000px;
+    margin: 0 auto;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.orders-container h3 {
+    font-size: 1.8em;
+    color: #333;
+    margin-bottom: 10px;
+    font-weight: 600;
+    text-align: center;
+}
+
+.orders-container p {
+    font-size: 1.2em;
+    color: #444;
+    line-height: 1.6;
+}
+
+.orders-container .order {
+    background: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    box-shadow: 0 2px 12px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.orders-container .order:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2);
+}
+
+.orders-container .order h3 {
+    color: #00796b;
+    margin-bottom: 15px;
+}
+
+.orders-container .order .address p {
+    margin: 5px 0;
+}
+
+.orders-container .order .order-devices {
+    margin-top: 20px;
+}
+
+.orders-container .order .order-devices h4 {
+    font-size: 1.4em;
+    font-weight: 500;
+    color: #00796b;
+    margin-bottom: 15px;
+}
+
+.orders-container .order .order-devices ul {
+    list-style: none;
+    padding: 0;
+}
+
+.orders-container .order .order-devices li {
+    font-size: 1.1em;
+    color: #555;
+    background-color: #f0f8ff;
+    padding: 10px;
+    margin: 8px 0;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.orders-container .order .order-devices li:hover {
+    background-color: #e1f5fe;
+}
+
+.orders-container .order .address p {
+    background-color: #d7f3e7;
+    border-radius: 8px;
+    padding: 10px;
+    font-size: 1.1em;
+    color: #00695c;
+    margin-top: 15px;
+}
+
+.orders-container .order .address p span {
+    font-weight: bold;
+}
+
+.orders-container .order .no-address {
+    color: #d32f2f;
+    font-style: italic;
+    font-size: 1.2em;
+    padding: 10px;
+    background-color: #ffe0e0;
+    border-radius: 8px;
+    text-align: center;
+    margin-top: 20px;
+}
+.total-price {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #2d98da;
+    padding: 10px;
+    background-color: #f1f6f9;
+    border-radius: 10px;
+    margin-top: 15px;
+    display: inline-block;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+}
+
+.total-price:hover {
+    background-color: #e1effd;
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+.total-price::before {
+    content: "💰";
+    margin-right: 8px;
+}
+
+.complete-order {
+    background: linear-gradient(135deg, #4CAF50, #2E7D32);
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.complete-order:hover {
+    background: linear-gradient(135deg, #66BB6A, #388E3C);
+    transform: translateY(-2px);
+    box-shadow: 0px 6px 10px rgba(0, 0, 0, 0.15);
+}
+
+.complete-order:active {
+    background: linear-gradient(135deg, #388E3C, #1B5E20);
+    transform: translateY(1px);
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+}
+

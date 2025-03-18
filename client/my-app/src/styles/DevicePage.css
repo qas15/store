@@ -1,0 +1,150 @@
+
+.device-page-container {
+    max-width: 1100px;
+    margin: auto;
+    background: #f8f9fa;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.device-title {
+    font-size: 32px;
+    font-weight: bold;
+    color: #343a40;
+    margin-bottom: 15px;
+}
+
+.device-image {
+    cursor: pointer;
+    transition: transform 0.3s ease-in-out;
+    border-radius: 10px;
+}
+
+.device-image:hover {
+    transform: scale(1.05);
+}
+
+
+.device-rating {
+    font-size: 22px;
+    font-weight: bold;
+    color: #ffc107;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-top: 15px;
+}
+
+.rating-buttons {
+    display: flex;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+.rating-buttons button {
+    font-size: 18px;
+    padding: 8px 15px;
+    transition: transform 0.2s;
+    border-radius: 8px;
+}
+
+.rating-buttons button:hover {
+    transform: scale(1.1);
+}
+
+
+.device-price-card {
+    padding: 25px;
+    background: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 3px 12px rgba(0, 0, 0, 0.15);
+    text-align: center;
+    margin-top: 20px;
+}
+
+.device-price-card h3 {
+    font-weight: bold;
+    color: #28a745;
+    margin-bottom: 15px;
+}
+
+.device-price-card button {
+    background: linear-gradient(45deg, #ff6b6b, #f94c66);
+    border: none;
+    color: white;
+    font-weight: bold;
+    padding: 10px 20px;
+    font-size: 18px;
+    transition: all 0.3s ease;
+    border-radius: 8px;
+}
+
+.device-price-card button:hover {
+    background: linear-gradient(45deg, #f94c66, #ff6b6b);
+    transform: scale(1.05);
+}
+
+
+.device-characteristics {
+    margin-top: 30px;
+}
+
+.device-characteristics h1 {
+    font-size: 26px;
+    font-weight: bold;
+    color: #343a40;
+    margin-bottom: 15px;
+}
+
+.device-characteristics .row {
+    padding: 12px;
+    font-size: 20px;
+    border-radius: 8px;
+    margin-bottom: 5px;
+}
+
+.device-characteristics .row:nth-child(even) {
+    background: #e9ecef;
+}
+
+.image-modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.8);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+    padding: 20px;
+}
+
+.modal-content {
+    background: white;
+    padding: 15px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+    position: relative;
+    max-width: 70vw;
+    max-height: 70vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.modal-image {
+    max-width: 100%;
+    max-height: 100%;
+    border-radius: 12px;
+}
+
+
+
+
+
+
+
+
