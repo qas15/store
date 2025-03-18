@@ -40,7 +40,7 @@ const PaymentPage = () => {
                 console.log('Devices:', devices);
                 console.log('Total Price:', totalPrice);
 
-                const response = await axios.post(`${process.env.REACT_APP_API_URL}api/orders/create`, {
+                const response = await axios.post(`${process.env.REACT_APP_API_URL}/api/orders/create`, {
                     devices: devices.map(device => ({
                         deviceId: device.deviceId,
                         price: device.price || 0,

@@ -43,7 +43,7 @@ const DevicePage = () => {
             const decodedToken = jwt_decode(token);
             const userId = decodedToken.id;
 
-            const response = await axios.post(`${process.env.REACT_APP_API_URL}api/rate`, {
+            const response = await axios.post(`${process.env.REACT_APP_API_URL}/api/rate`, {
                 userId: userId,
                 deviceId: id,
                 newRating: parseFloat(rating),
