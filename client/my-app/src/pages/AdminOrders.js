@@ -12,7 +12,7 @@ const AdminOrders = () => {
 
     const fetchOrders = async () => {
         try {
-            const response = await fetch(`${process.env.REACT_APP_API_URL}/api/orders`);
+            const response = await fetch(`${process.env.REACT_APP_API_URL}api/orders`);
             if (!response.ok) {
                 throw new Error('Ошибка на сервере');
             }
@@ -28,7 +28,7 @@ const AdminOrders = () => {
 
     const completeOrder = async (orderId) => {
         try {
-            const response = await fetch(`${process.env.REACT_APP_API_URL}/api/orders/${orderId}`, {
+            const response = await fetch(`${process.env.REACT_APP_API_URL}api/orders/${orderId}`, {
                 method: 'DELETE',
             });
             if (!response.ok) {
