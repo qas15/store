@@ -2,7 +2,7 @@ const fs = require('fs');
 const path = require('path');
 const uuid = require('uuid');
 const { Device, DeviceInfo } = require('../models/models');
-const ApiError = require('../middleware/ApiError');
+const ApiError = require('../error/ApiError');
 
 class DeviceController {
     async create(req, res, next) {
